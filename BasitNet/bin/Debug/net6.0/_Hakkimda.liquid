@@ -1,0 +1,37 @@
+{% extends "Layout" %}
+{% block title %}
+Mustafa Zuvin'in hakkinda
+{% endblock %}
+
+{% block head %}
+<style>
+    .selam{
+        border: 2px dashed darkgreen;
+        padding: 12px;
+    }
+</style>
+
+<script>
+    window.onbeforeunload = function (e) {
+        e = e || window.event;
+        // For IE and Firefox prior to version 4
+        if (e) {
+            e.returnValue = 'Any string';
+        }
+        // For Safari
+        return 'Any string';
+    };
+</script>
+{% endblock %}
+
+{% block body %}
+<center>
+    Hakkında sayfası
+</center>
+<hr/>
+<div class="selam">
+    Göreceğini gördün çık git kasıyor.
+</div>
+{% endblock %}
+
+
